@@ -1,1 +1,12 @@
-<p>The word is {{ word }}</p>
+{% comment %}
+     Renders a first word and a second word
+
+     Accepts:
+     - word: {String} the first word
+     - second_word: {String} the second word
+
+     Usage:
+     {% render 'my-snippet', { word: word_variable, second_word: second_word_variable } %}
+{% endcomment %}
+
+<p>The word is {{ word }} and the second word is {{ second_word }}</p>
