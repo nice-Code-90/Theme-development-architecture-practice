@@ -19,6 +19,13 @@
             "heading_size": "h0"
           }
         },
+        "heading_FxBAWJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "my heading 2",
+            "heading_size": "h1"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -33,6 +40,7 @@
       },
       "block_order": [
         "heading",
+        "heading_FxBAWJ",
         "button"
       ],
       "settings": {
