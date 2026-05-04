@@ -15,8 +15,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "My image banner",
             "heading_size": "h0"
+          }
+        },
+        "heading_FxBAWJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "my heading 2",
+            "heading_size": "h1"
           }
         },
         "button": {
@@ -33,9 +40,11 @@
       },
       "block_order": [
         "heading",
+        "heading_FxBAWJ",
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/theme_cover_image.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
