@@ -1,6 +1,6 @@
 <h2 style="text-align: {{ section.settings.title_alignment }}">{{ section.settings.title }}</h2>
 
-{% if settings.promotion_name %}
+{% if settings.promotion_name.size > 0 %}
     <p>Active promotion: {{ settings.promotion_name }}</p> 
 {% endif %}
 
