@@ -12,6 +12,9 @@
 <h2>Inline Richtext Setting</h2>
 <div>{{ section.settings.inline_richtext_setting }}</div>
 
+<h2>Number Setting</h2>
+<div>{{ section.settings.number_setting }}</div>
+
 <div></div>
 
 {% schema %}
@@ -44,6 +47,11 @@
             "type": "inline_richtext",
             "id": "inline_richtext_setting",
             "label": "Inline Richtext Setting"
+        },
+        {
+            "type": "number",
+            "id": "number_setting",
+            "label": "Number Setting"
         }
 
     ],
