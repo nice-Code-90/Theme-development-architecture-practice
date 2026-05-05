@@ -299,10 +299,10 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-    {% render 'my-snippet',{
+    {% comment %} {% render 'my-snippet',{
       word: 'hello',
       second_word:'word2'
-    } %}
+    } %} {% endcomment %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
