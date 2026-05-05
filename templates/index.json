@@ -112,11 +112,19 @@
         "title": "Promotion 1",
         "title_alignment": "center"
       }
+    },
+    "sections_tutorial_Mp7weU": {
+      "type": "sections-tutorial",
+      "name": "Sections Tutorial",
+      "settings": {
+        "text_setting": "This is my first setting"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "promotions_group_iyxmem"
+    "promotions_group_iyxmem",
+    "sections_tutorial_Mp7weU"
   ]
 }
