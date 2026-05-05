@@ -31,8 +31,12 @@
     <p>checkbox is false</p>
 {% endif %}
 
+<h2>Radio Setting</h2>
+<div>{{ section.settings.radio_setting }}</div>
 
-<div></div>
+<h2>Color Setting</h2>
+<div>{{ section.settings.color_setting }}</div>
+
 
 {% schema %}
 {
@@ -131,8 +135,12 @@
                     "value": "value-3",
                     "label": "Value 3"
                 }
-            ]
-            
+            ]   
+        },
+        {
+            "type": "color",
+            "label": "Color Setting",
+            "id": "color_setting"
         }
 
     ],
