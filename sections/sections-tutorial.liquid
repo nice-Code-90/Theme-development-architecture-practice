@@ -18,6 +18,20 @@
 <h2>Range Setting</h2>
 <div>{{ section.settings.range_setting }}</div>
 
+<h2>Select Setting</h2>
+<div>{{ section.settings.select_setting }}</div>
+
+<h2>Checkbox Setting</h2>
+<div>{{ section.settings.select_setting }}</div>
+
+<h2>Checkbox Settings</h2>
+{% if section.settings.checkbox_setting == true %}
+    <p>checkbox is true</p>
+{% else %}
+    <p>checkbox is false</p>
+{% endif %}
+
+
 <div></div>
 
 {% schema %}
@@ -74,9 +88,51 @@
             "options":[
                 {
                 "value": "value_something_1",
-                "label": "Value 1"
+                "label": "Value 1",
+                "group": "group-1"
+                },
+                {
+                "value": "value_something_2",
+                "label": "Value 2",
+                "group": "group-1"
+                },
+                {
+                "value": "value_something_3",
+                "label": "Value 3",
+                "group": "group-2"
+                },
+                {
+                "value": "value_something_4",
+                "label": "Value 4",
+                "group": "group-2"
                 }
             ]
+        },
+        {
+            "type": "checkbox",
+            "id": "checkbox_setting",
+            "label": "Checkbox Setting",
+            "default": true
+        },
+        {
+            "type": "radio",
+            "id": "radio_setting",
+            "label": "Radio Button Setting",
+            "options": [
+                {
+                    "value": "value-1",
+                    "label": "Value 1"
+                },
+                {
+                    "value": "value-2",
+                    "label": "Value 2"
+                },
+                {
+                    "value": "value-3",
+                    "label": "Value 3"
+                }
+            ]
+            
         }
 
     ],
