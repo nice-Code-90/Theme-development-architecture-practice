@@ -112,11 +112,22 @@
         "title": "Promotion 1",
         "title_alignment": "center"
       }
+    },
+    "sections_tutorial_Mp7weU": {
+      "type": "sections-tutorial",
+      "name": "Sections Tutorial",
+      "settings": {
+        "text_setting": "This is my first setting",
+        "textarea_setting": "This is some multiline text\nnext line\nthird line",
+        "richtext_setting": "<p>This is some tichtext setting</p><p><strong>sec line</strong></p><ul><li><strong>list item</strong></li></ul><h2><strong>Heading</strong></h2>",
+        "inline_richtext_setting": "This is an inline richtext"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "promotions_group_iyxmem"
+    "promotions_group_iyxmem",
+    "sections_tutorial_Mp7weU"
   ]
 }
