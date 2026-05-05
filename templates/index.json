@@ -117,7 +117,8 @@
       "type": "sections-tutorial",
       "name": "Sections Tutorial",
       "settings": {
-        "text_setting": "This is my first setting"
+        "text_setting": "This is my first setting",
+        "textarea_setting": "This is some multiline text\nnext line"
       }
     }
   },
