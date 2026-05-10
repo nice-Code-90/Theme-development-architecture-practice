@@ -44,8 +44,30 @@
 
 {% if section.settings.image_picker_setting %}
     <h2>Image Picker Value</h2>
-    {{ section.settings.image_picker_setting | image_url: width: 400 | image_tag}}
+    {{ section.settings.image_picker_setting 
+        | image_url: width: 400 
+        | image_tag: style: 'height: 200px; object-fit: cover;'
+    }}
 {% endif %}
+
+<div>
+    <h2>Vide Settings</h2>
+    {{ section.settings.video_setting | video_tag: controls: true, style: 'height: 500px; width: 500px', image_size: '500x'}}
+</div>
+
+<div>
+    <h2>External Video URL</h2>
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/{{ section.settings.video_url_setting.id }}"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+    ></iframe>
+    
+</div>
 
 
 
@@ -162,6 +184,18 @@
             "type": "image_picker",
             "label": "Image Picker",
             "id": "image_picker_setting"
+        },
+        {
+            "type": "video",
+            "label": "Video Settings",
+            "id": "video_setting"
+        },
+        {
+            "type": "video_url",
+            "label": "Video URL Settings",
+            "id": "video_url_setting",
+            "accept": ["youtube"],
+            "placeholder": "Youtube URL"
         }
 
     ],
