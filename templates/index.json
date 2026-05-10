@@ -132,7 +132,8 @@
         "video_url_setting": "https://www.youtube.com/watch?v=1iFMhJ1ISgw",
         "url_setting": "shopify://products/the-complete-snowboard",
         "html_setting": "hello world\n<br>\n<strong>bold</strong>\n<a href=\"\">link</a>",
-        "liquid_setting": "<p>{{ 10 | plus: 10 }}</p>\n<br>\n{{ shop.name }}"
+        "liquid_setting": "<p>{{ 10 | plus: 10 }}</p>\n<br>\n{{ shop.name }}",
+        "product_setting": "the-collection-snowboard-liquid"
       }
     }
   },
