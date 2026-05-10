@@ -138,12 +138,6 @@
           "the-collection-snowboard-hydrogen",
           "the-collection-snowboard-liquid",
           "the-collection-snowboard-oxygen"
-        ],
-        "collection_setting": "automated-collection",
-        "collection_list_setting": [
-          "automated-collection",
-          "frontpage",
-          "hydrogen"
         ]
       }
     }
