@@ -96,13 +96,14 @@
 
 
 <h2>Collection Setting</h2>
-<p>{{ section.settings.collection }} | {{ section.settings.collection.title }} - {{ collection.products.size }} </p>
+<p>
+    {{ section.settings.collection }} | {{ section.settings.collection.title }} - {{ collection.products.size }} 
+</p>
 
-<h2>Product List Setting</h2>
-{%  for product in section.settings.product_list_setting %}
+<h2>Collection List Setting</h2>
+{%  for collection in section.settings.collection_list_setting %}
     <p>
-        {{ product.handle }} | {{ product.title }} - 
-        {{ product.variants[0].price | money }}
+        {{ collection.handle }} | {{ collection.title }} - {{ collection.products.size }}
     </p>
 {% endfor %}
 
