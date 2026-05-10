@@ -44,7 +44,10 @@
 
 {% if section.settings.image_picker_setting %}
     <h2>Image Picker Value</h2>
-    {{ section.settings.image_picker_setting | image_url: width: 400 | image_tag}}
+    {{ section.settings.image_picker_setting 
+        | image_url: width: 400 
+        | image_tag: style: 'height: 200px; object-fit: cover;'
+    }}
 {% endif %}
 
 
