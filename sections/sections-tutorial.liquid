@@ -89,8 +89,22 @@
 <h2>Product List Setting</h2>
 {%  for product in section.settings.product_list_setting %}
     <p>
-        {{ product }} | {{ product.title }} - 
+        {{ product.handle }} | {{ product.title }} - 
         {{ product.variants[0].price | money }}
+    </p>
+{% endfor %}
+
+
+<h2>Collection Setting</h2>
+<p>
+    {{ section.settings.collection_setting }} | {{ section.settings.collection_setting.title }} -
+    {{ section.settings.collection_setting.products.size }} 
+</p>
+
+<h2>Collection List Setting</h2>
+{%  for collection in section.settings.collection_list_setting %}
+    <p>
+        {{ collection.handle }} | {{ collection.title }} - {{ collection.products.size }}
     </p>
 {% endfor %}
 
@@ -243,7 +257,19 @@
         {
             "type": "product_list",
             "label": "Product List Setting",
-            "id": "product_list_setting"
+            "id": "product_list_setting",
+            "limit": 10
+        },
+        {
+            "type": "collection",
+            "label": "Collection Setting",
+            "id": "collection_setting"
+        },
+        {
+            "type": "collection_list",
+            "label": "Collection List Setting",
+            "id": "collection_list_setting",
+            "limit": 10
         }
 
     ],
