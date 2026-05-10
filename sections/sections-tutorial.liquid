@@ -71,6 +71,11 @@
 <h2>URL Setting</h2>
 <a href="{{ section.settings.url_setting }}">URL Setting here</a>
 
+<h2>HTML Setting</h2>
+<div>
+    {{ section.settings.html_setting }}
+</div>
+
 
 
 {% schema %}
@@ -203,6 +208,11 @@
             "type": "url",
             "label": "URL Setting",
             "id": "url_setting"
+        },
+        {
+            "type": "html",
+            "label": "HTML Setting",
+            "id": "html_setting"
         }
 
     ],
