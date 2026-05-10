@@ -66,10 +66,25 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
     ></iframe>
-    
 </div>
 
+<h2>URL Setting</h2>
+<a href="{{ section.settings.url_setting }}">URL Setting here</a>
 
+<h2>HTML Setting</h2>
+<div>
+    {{ section.settings.html_setting }}
+</div>
+
+<h2>Liquid Setting</h2>
+<div>
+    {{ section.settings.liquid_setting }}
+</div>
+
+<h2>Product Setting</h2>
+<p>{{ section.settings.product_setting }} | {{ section.settings.product_setting.title }} -
+    {{ section.settings.product_setting.variants[0].price | money}}
+</p>
 
 {% schema %}
 {
@@ -196,6 +211,26 @@
             "id": "video_url_setting",
             "accept": ["youtube"],
             "placeholder": "Youtube URL"
+        },
+        {
+            "type": "url",
+            "label": "URL Setting",
+            "id": "url_setting"
+        },
+        {
+            "type": "html",
+            "label": "HTML Setting",
+            "id": "html_setting"
+        },
+        {
+            "type": "liquid",
+            "label": "Liquid Setting",
+            "id": "liquid_setting"
+        },
+        {
+            "type": "product",
+            "label": "Product Setting",
+            "id": "product_setting"
         }
 
     ],
