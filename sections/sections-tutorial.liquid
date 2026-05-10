@@ -42,8 +42,11 @@
     <p>{{ section.settings.color_background_setting }}</p>
 </div>
 
-<h2>Image Picker Value</h2>
-{{ section.settings.image_picker_setting | image_url: width: 400 | image_tag}}
+{% if section.settings.image_picker_setting %}
+    <h2>Image Picker Value</h2>
+    {{ section.settings.image_picker_setting | image_url: width: 400 | image_tag}}
+{% endif %}
+
 
 
 {% schema %}
