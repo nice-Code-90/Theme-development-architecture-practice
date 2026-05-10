@@ -89,7 +89,7 @@
 <h2>Product List Setting</h2>
 {%  for product in section.settings.product_list_setting %}
     <p>
-        {{ product }} | {{ product.title }} - 
+        {{ product.handle }} | {{ product.title }} - 
         {{ product.variants[0].price | money }}
     </p>
 {% endfor %}
