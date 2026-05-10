@@ -130,7 +130,8 @@
         "image_picker_setting": "shopify://shop_images/sample-normal-wax.png",
         "video_setting": "shopify://files/videos/2026-03-27 22-29-43.mp4",
         "video_url_setting": "https://www.youtube.com/watch?v=1iFMhJ1ISgw",
-        "url_setting": "shopify://products/the-complete-snowboard"
+        "url_setting": "shopify://products/the-complete-snowboard",
+        "html_setting": "hello world\n<br>\n<strong>bold</strong>\n<a href=\"\">link</a>"
       }
     }
   },
