@@ -86,6 +86,14 @@
     {{ section.settings.product_setting.variants[0].price | money}}
 </p>
 
+<h2>Product List Setting</h2>
+{%  for product in section.settings.product_list_setting %}
+    <p>
+        {{ product }} | {{ product.title }} - 
+        {{ product.variants[0].price | money }}
+    </p>
+{% endfor %}
+
 {% schema %}
 {
     "name": "Sections Tutorial",
@@ -231,6 +239,11 @@
             "type": "product",
             "label": "Product Setting",
             "id": "product_setting"
+        },
+        {
+            "type": "product_list",
+            "label": "Product List Setting",
+            "id": "product_list_setting"
         }
 
     ],
