@@ -120,7 +120,15 @@
         "text_setting": "This is my first setting",
         "textarea_setting": "This is some multiline text\nnext line\nthird line",
         "richtext_setting": "<p>This is some tichtext setting</p><p><strong>sec line</strong></p><ul><li><strong>list item</strong></li></ul><h2><strong>Heading</strong></h2>",
-        "inline_richtext_setting": "This is an inline richtext"
+        "inline_richtext_setting": "This is an inline richtext",
+        "range_setting": 60,
+        "select_setting": "value_something_1",
+        "checkbox_setting": true,
+        "radio_setting": "value-1",
+        "color_setting": "",
+        "color_background_setting": "",
+        "image_picker_setting": "shopify://shop_images/sample-normal-wax.png",
+        "video_setting": "shopify://files/videos/2026-03-27 22-29-43.mp4"
       }
     }
   },
