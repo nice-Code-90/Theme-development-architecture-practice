@@ -120,6 +120,19 @@
 <h2>Link List Setting</h2>
 <p>{{ section.settings.link_list_setting.title }}</p>
 
+<h2 style="text-align: {{ section.settings.alignment_setting }}">Text Alignment Setting</h2>
+<p style="text-align: {{ section.settings.alignment_setting }}">{{ section.settings.alignment_setting }}</p>
+
+<h2>Font Setting</h2>
+<p>Font setting: {{ section.settings.font_setting.family }}</p>
+
+<style>
+    {{ section.settings.font_setting | font_face: font_display: 'swap' }}
+    .section-tutorial * {
+    font-family: {{ section.settings.font_setting.family }};
+    }
+</style>
+
 {% schema %}
 {
     "name": "Sections Tutorial",
@@ -302,6 +315,18 @@
             "type": "link_list",
             "label": "Link List Setting",
             "id": "link_list_setting"
+        },
+        {
+            "type": "text_alignment",
+            "id": "alignment_setting",
+            "label": "Text Alignment Setting",
+            "default":"center"
+        },
+        {
+            "type": "font_picker",
+            "label": "Font Setting",
+            "id": "font_setting",
+            "default":"assistant_n4"
         }
 
     ],
