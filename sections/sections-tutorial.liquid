@@ -108,6 +108,18 @@
     </p>
 {% endfor %}
 
+<h2>Page Setting</h2>
+<p>{{ section.settings.page_setting.title }}</p>
+
+<h2>Article Setting</h2>
+<p>{{ section.settings.article_setting.title }}</p>
+
+<h2>Blog Setting</h2>
+<p>{{ section.settings.blog_setting.title }}</p>
+
+<h2>Link List Setting</h2>
+<p>{{ section.settings.link_list_setting.title }}</p>
+
 {% schema %}
 {
     "name": "Sections Tutorial",
@@ -270,6 +282,26 @@
             "label": "Collection List Setting",
             "id": "collection_list_setting",
             "limit": 10
+        },
+        {
+            "type": "page",
+            "label": "Page Settings",
+            "id": "page_setting"
+        },
+        {
+            "type": "article",
+            "label": "Article Setting",
+            "id": "article_setting",
+        },
+        {
+            "type": "blog",
+            "label": "Blog Setting",
+            "id": "blog_setting"
+        },
+        {
+            "type": "link_list",
+            "label": "Link List Setting",
+            "id": "lnk_list_setting"
         }
 
     ],
