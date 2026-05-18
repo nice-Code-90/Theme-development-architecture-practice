@@ -1,4 +1,22 @@
-<h2>{{ section.settings.text_setting }}</h2>
+{{ 'sections-tutorial.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'section-tutorial.js' | asset_url }}" async></script>
+
+<style>
+    #shopify-section-{{ section.id }} {
+        background: {{ section.settings.color_background_setting }};
+    }
+</style>
+
+
+<div class="section-tutorial__internal" style="--primary-color: {{ section.settings.color_setting }}">
+    <h2>{{ section.settings.text_setting }}</h2>
+
+    <button class="button">
+        button
+    </button>
+
+
 <p>{{ section.index }}</p>
 <p>{{ section.id }}</p>
 
@@ -42,6 +60,7 @@
         <p>{{ title }}</p>
     </div>
 {% endfor %}
+</div>
 
 
 
