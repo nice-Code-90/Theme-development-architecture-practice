@@ -2,6 +2,10 @@
 <p>{{ section.index }}</p>
 <p>{{ section.id }}</p>
 
+{% if request.design_mode %}
+    <p>This is from theme editor</p>
+{% endif %}
+
 {% assign products = section.blocks | where: "type", "section_product" %}
 {% assign collections = section.blocks | where: "type", "section_collection"%}
 
