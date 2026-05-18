@@ -6,9 +6,11 @@
         {% assign title = block.settings.title | default: block.settings.product.title %}
         {% assign image = block.settings.image | default: block.settings.product.featured_image %}
     {% endif %}
+    {% if image %}
     <div>
         {{ image | image_url: width: 300 | image_tag}}
     </div>
+    {% endif %}
     <p>{{ title }}</p>
 {% endfor %}
 
