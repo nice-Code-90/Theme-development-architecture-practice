@@ -1,3 +1,7 @@
+<h2>{{ section.settings.text_setting }}</h2>
+<p>{{ section.index }}</p>
+<p>{{ section.id }}</p>
+
 {% assign products = section.blocks | where: "type", "section_product" %}
 {% assign collections = section.blocks | where: "type", "section_collection"%}
 
@@ -42,7 +46,7 @@
     "name": "Sections Tutorial",
     "tag":"section",
     "class": "section-tutorial",
-    "limit": 2,
+    
     "disabled_on": {
         "templates": ["collection"]
     },
@@ -294,9 +298,69 @@
     ],
     "presets": [
         {
-            "name": "Sections Tutorial",
-            "settings": {}
+            "name": "Sections Tutorial with Products",
+            "settings": {
+                "text_setting":"Section Tutorial with Products"
+            },
+            "blocks": [
+                {
+                   "type":"section_product"
+                   ,"settings": {
+                        "product":    "the-3p-fulfilled-snowboard"
+                    }
+                },
+                {
+                   "type":"section_product"
+                   ,"settings": {
+                        "product":    "the-3p-fulfilled-snowboard",
+                        "title":"Another Product"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Sections Tutorial with Collections",
+            "settings": {
+                "text_setting":"Section Tutorial with Collections"
+            },
+            "blocks": [
+                {
+                   "type":"section_collection"
+                   ,"settings": {
+                        "collection":    "automated-collection"
+                    }
+                },
+                {
+                   "type":"section_collection"
+                   ,"settings": {
+                        "collection":    "automated-collection",
+                        "title":"Another Collection"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Section Tutorial Mixed",
+             "settings": {
+                "text_setting":"Section Tutorial with Product and Collection"
+            },
+            "blocks": [
+                  {
+                   "type":"section_product"
+                   ,"settings": {
+                        "product":    "the-3p-fulfilled-snowboard"
+                    }
+                },
+                {
+                   "type":"section_collection"
+                   ,"settings": {
+                        "collection":    "automated-collection",
+                        "title":"Another Collection"
+                    }
+                }
+            ]
         }
+        
         
     ]
 }
